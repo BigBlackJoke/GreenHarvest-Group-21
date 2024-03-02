@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+
+.main {
+    background-color: #576f35;
+    height: 800px;
+    max-width: 1300px;
+    position: relative;
+    display: flex;
+    color: #fbfbfb;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+.header {
+    position: absolute;
+    left: 0;
+    top: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    width: 100%;
+}
+.nav_menu {
+    display: flex;
+    width: 490px;
+    justify-content: space-between;
+}
+.nav_menu_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.nav_menu_list li {
+    list-style: none;
+    font-size: 16px;
+    color: #fbfbfb;
+    padding: 12px;
+    border: 1px solid #fbfbfb65;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.header_burger {
+    display: none;
+}
+.header_btn {
+    background-color: #7a3145;
+    border: none;
+    padding: 16px 32px;
+    color: #fbfbfb;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.main_text_title {
+    font-size: 76px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.main_text_description {
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    max-width: 455px;
+}
+.main_text {
+    max-width: 565px;
+    padding: 238px 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+}
+
+/* ====================================================media */
+
+@media (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+        max-width: 1024px;
+    }
+    .header {
+        padding: 0 32px;
+    }
+    .header_burger {
+        display: block;
+
+        position: fixed;
+        top: 32px;
+        right: 32px;
+        width: 40px;
+        height: 40px;
+    }
+    /* -------------настройки выпадающей менюшки */
+    .nav_menu {
+        display: none;
+        /* удалить это: display: none; */
+        position: absolute;
+        height: 100vh;
+        width: 350px;
+        top: -40px;
+        right: 0;
+        /* right: -100%; */
+        background-color: #7a3145;
+        flex-direction: column;
+
+        padding: 360px 114px 50px 114px;
+
+        align-items: center;
+    }
+    .nav_menu_list {
+        flex-direction: column;
+    }
+    .nav_menu_list li:hover {
+        color: #7a3145;
+        background-color: #fbfbfb;
+    }
+    .header_btn {
+        color: #7a3145;
+        background-color: #fbfbfb;
+        width: 157px;
+    }
+    /* ------------------настройки выпадающей менюшки  конец----- */
+
+    .main_text {
+        max-width: 100%;
+        padding: 122px 32px 50px;
+
+        gap: 25px;
+    }
+    .main_text_description {
+        max-width: 600px;
+    }
+    .main_img {
+        max-height: 539px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* =========================== */
+@media (max-width: 920px) {
+    .main_text {
+        max-width: 77%;
+    }
+}
+/* ============================= */
+@media (max-width: 480px) {
+    .main_text_title {
+        font-size: 48px;
+    }
+    .main_text_description {
+        font-size: 14px;
+    }
+    .main_text {
+        max-width: 100%;
+    }
+    .header {
+        
+    }
+}
