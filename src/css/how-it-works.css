@@ -17,14 +17,6 @@
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 376px) {
-    .container1 {
-        max-width: none;
-        min-width: 375px;
-    }
-}
-
-
 .how-it-container {
     display: flex;
     flex-direction: column;
@@ -135,7 +127,12 @@
 }
 
 
-
+@media only screen and (min-width: 376px) {
+    .container1 {
+        max-width: none;
+        min-width: 375px;
+    }
+}
 
 @media only screen and (min-width: 375px) {
     .how-it-about-menu {
