@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/GreenHarvest-Group-21/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/GreenHarvest-Group-21/assets/index-a4ba0069.css">
+    <link rel="stylesheet" href="/GreenHarvest-Group-21/assets/index-eb6aa6b5.css">
   </head>
   <body>
     <header>
@@ -72,28 +72,31 @@
         <a href="">Shop Now</a>
       </button>
     </div>
-    <div class="mob-menu">
-      <button type="button" class="close-menu-btn">
-        <svg class="close-menu-icon">
-          <use href="/GreenHarvest-Group-21/assets/icons-49961fe7.svg#icon-close"></use>
-        </svg>
-      </button>
-      <nav class="mob-menu-navigation">
-        <ul class="mob-menu-list">
-          <li class="mob-menu-item active">
-            <a href="#how-it-works" class="mob-menu-link">How it works</a>
-          </li>
-          <li class="mob-menu-item">
-            <a href="#vegetable" class="mob-menu-link">Vegetables</a>
-          </li>
-          <li class="mob-menu-item">
-            <a href="#review" class="mob-menu-link">Reviews</a>
-          </li>
-        </ul>
-      </nav>
-      <button type="button" class="menu-buy-btn">
-        <a href="">Shop Now</a>
-      </button>
+    <div class="mob-menu-for-backdrop">
+      <div class="mob-menu">
+        <button type="button" class="close-menu-btn">
+          <svg class="close-menu-icon">
+            <use href="/GreenHarvest-Group-21/assets/icons-49961fe7.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-navigation">
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item active">
+              <a href="#how-it-works" class="mob-menu-link">How it works</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#vegetable" class="mob-menu-link">Vegetables</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#review" class="mob-menu-link">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="menu-buy-btn">
+          <a href="">Shop Now</a>
+        </button>
+      </div>
+      <div class="mob-menu-backdrop"></div>
     </div>
   </div>
 </div>
@@ -185,17 +188,17 @@
 </section>
 
       <section class="promo-section">
-    <div class="container">
-        <h2 class="visually-hidden">Advertisement</h2>
-        <p class="promo">
-            <span class="promo-discount">Discount up to 40%!</span>
-            <span class="promo-text">Taste the vitamins and keep your health</span>
-        </p>
-
-    </div>
+  <div class="promo-container">
+    <h2 class="visually-hidden">Advertisement</h2>
+    <p class="promo">
+      <span class="promo-discount">Discount up to 40%!</span>
+      <span class="promo-text">Taste the vitamins and keep your health</span>
+    </p>
+  </div>
 </section>
+
       <section class="vegetables" id="vegetable">
-  <div class="container">
+  <div class="vegetables-container">
     <h2 class="vegetables-title">
       organic <span class="title-span">vegetables</span>
     </h2>
@@ -282,7 +285,7 @@
 </section>
 
       <section class="review" id="review">
-  <div class="container">
+  <div class="review-container">
     <h2 class="review-title">
       reviews from our<span class="review-title-chan"> customers</span>
     </h2>
